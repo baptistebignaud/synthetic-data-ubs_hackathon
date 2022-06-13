@@ -1,0 +1,14 @@
+### Framework
+    jupyterlab == 3.2.4
+### Data vizualisation and plot
+    matplotlib == 3.5.0
+    seaborn == 0.11.2
+### Data analysis 
+    pandas == 1.3.4
+    # fuzzymatcher == 0.0.5
+    statsmodels
+    # dependncy to open xlsx
+    # openpyxl == 3.0.9 
+### ML Librairies
+    sklearn 
+    tensorflow == 2.5.0

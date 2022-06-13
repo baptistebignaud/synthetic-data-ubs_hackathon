@@ -1,0 +1,29 @@
+version: "3.9"
+services:
+  ubs_hackathon:
+    tty: true
+    build:
+      context: .
+      shm_size: 256mb
+    ports:
+      - "4000:4000"
+      - "8888:8888" #Notebook port
+      - "6006:6006" # Tensorboard
+
+    container_name: "ubs_hackathon"
+    volumes:
+      - ./:/appli
+
+    networks:
+      - ubs_hackathon_network
+
+    shm_size: "2gb"
+    # deploy:
+    #    resources:
+    #       reservations:
+    #          devices:
+    #             - capabilities: [gpu]
+    #               driver: nvidia
+
+networks:
+  ubs_hackathon_network:
